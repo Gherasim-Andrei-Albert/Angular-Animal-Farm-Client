@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+        <a href="/owners" class="btn btn-info">Back</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <form [formGroup]="form">
+    <div class="row form-group">
+      <div class="col-xs-12">
+        <label for="age">Owner age</label>
+        <input class="form-control" type="number" [(ngModel)]="owner.age" formControlName="age">
+      </div>
+    
+      <div class="col-xs-12">
+        <label for="last">Last name</label>
+        <input class="form-control" type="text" [(ngModel)]="owner.lastName" formControlName="lastName">
+      </div>
+    
+      <div class="col-xs-12">
+        <label for="first">First name</label>
+        <input class="form-control" type="text" [(ngModel)]="owner.firstName" formControlName="firstName">
+      </div>
+    
+      <div class="col-xs-3">
+        <button class="btn btn-info" (click)="saveOwner()">Save user</button>
+      </div>
+    
+    </div>
+  
+  </form>
+
+</div>
